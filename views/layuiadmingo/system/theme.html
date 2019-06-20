@@ -1,0 +1,20 @@
+
+<!-- 主题设置模板 -->
+
+
+
+<script>
+layui.data.theme = function(){
+  layui.use('form', function(){
+    var form = layui.form
+    ,admin = layui.admin;
+    
+    //监听隐藏开关
+    form.on('switch(system-theme-sideicon)', function(){
+      admin.theme({
+        hideSideIcon: this.checked
+      })
+    });
+  });
+};
+</script>

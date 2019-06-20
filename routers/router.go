@@ -87,10 +87,15 @@ func init() {
 	beego.Router("/template/tips/404", &layuiadmingo.LayuiadminGOController{},"*:TemplateTips404")
 	beego.Router("/template/tips/error", &layuiadmingo.LayuiadminGOController{},"*:TemplateTempError")
 
-	//
-	//beego.Router("/template", &layuiadmingo.LayuiadminGOController{},"*:Template")
-	//beego.Router("/template", &layuiadmingo.LayuiadminGOController{},"*:Template")
-	//beego.Router("/template", &layuiadmingo.LayuiadminGOController{},"*:Template")
-	//beego.Router("/template", &layuiadmingo.LayuiadminGOController{},"*:Template")
+	//iframe
+	beego.Router("/Iframe", &layuiadmingo.LayuiadminGOController{},"*:IframeLayerIframe")
+	beego.Router("/Iframe/Layer/Iframe", &layuiadmingo.LayuiadminGOController{},"*:IframeLayerIframe")
+
+
+	beego.Router("/system", &layuiadmingo.LayuiadminGOController{},"*:SystemAbout")
+	beego.Router("/system/about", &layuiadmingo.LayuiadminGOController{},"*:SystemAbout")
+	beego.Router("/system/get", &layuiadmingo.LayuiadminGOController{},"*:SystemGet")
+	beego.Router("/system/more", &layuiadmingo.LayuiadminGOController{},"*:SystemMore")
+	beego.Router("/system/theme", &layuiadmingo.LayuiadminGOController{},"*:SystemTheme")
 
 }
