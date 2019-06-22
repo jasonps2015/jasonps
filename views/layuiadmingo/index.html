@@ -316,7 +316,20 @@
               <dd><a lay-href="//www.baidu.com/">百度一下</a></dd>
               <dd><a lay-href="//www.layui.com/">layui官网</a></dd>
               <dd><a lay-href="//www.layui.com/admin/">layuiAdmin官网</a></dd>
+
+              <dd data-name="content">
+                <a href="javascript:;">外部页面</a>
+                <dl class="layui-nav-child">
+                  <dd data-name="list"><a lay-href="iframe/layer/iframe.html">iframe</a></dd>
+                  <!--<dd data-name="tags"><a lay-href="app/content/tags.html">分类管理</a></dd>
+                  <dd data-name="comment"><a lay-href="app/content/comment.html">评论管理</a></dd>-->
+                </dl>
+              </dd>
+
             </dl>
+
+
+
           </li>
           <li data-name="app" class="layui-nav-item">
             <a href="javascript:;" lay-tips="应用" lay-direction="2">
@@ -406,6 +419,8 @@
               </dd>
             </dl>
           </li>
+
+
           <li data-name="get" class="layui-nav-item">
             <a href="javascript:;" lay-href="//www.layui.com/admin/#get" lay-tips="授权" lay-direction="2">
               <i class="layui-icon layui-icon-auz"></i>

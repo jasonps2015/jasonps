@@ -1,13 +1,13 @@
 # jasonps
 
 # GO Linux配置
-/etc/profile.d/go.sh -  新建一个 GO.sh 的文件 里面放入下内容
-
-export GOPATH=/home/go_cord 
-export GOROOT=/usr/local/go 
-export GOBIN=$GOPATH/bin 
-export PATH=$PATH:$GOBIN:/usr/local/go/bin
-
+****
+/etc/profile.d/go.sh -  新建一个 GO.sh 的文件 里面放入下内容     <br>
+export GOPATH=/home/go_cord    <br>
+export GOROOT=/usr/local/go    <br>
+export GOBIN=$GOPATH/bin       <br>
+export PATH=$PATH:$GOBIN:/usr/local/go/bin   <br>
+****
 立即生效环境变量
 source /etc/profile.d/go.sh
 
